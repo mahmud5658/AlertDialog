@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         alertDialogBuilder.setMessage(R.string.message);
         //for setting icone
         alertDialogBuilder.setIcon(R.drawable.question);
+
+        alertDialogBuilder.setCancelable(false);
         alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
